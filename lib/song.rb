@@ -30,7 +30,7 @@ class Song
             artist_count[artist] = 1
           end
         end
-        artist_count
+         artist_count
       end
 
     def self.genre_count
@@ -39,9 +39,15 @@ class Song
         if genre_count[genre]
             genre_count[genre] += 1
         else
-            genre_count[genre] = 1
+           genre_count[genre] = 1
         end
         end
         genre_count
     end
 end
+
+walker = Song.new("Diamond heart", "Alan Walker", "House")
+puts Song.genres
+puts Song.genre_count
+puts Song.artist_count
+puts Song.name
